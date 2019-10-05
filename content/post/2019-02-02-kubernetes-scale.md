@@ -2,15 +2,17 @@
 title: Scaling My Kubernetes Deployment
 date: 2019-02-02
 tags: ["kubernetes","code"]
+
 ---
+
 Scaling my Kubernetes deployment
 <!--more-->
-'''sh
+```sh
 $ kubectl scale deployments/kubernetes-bootcamp --replicas=4
-'''
+```
 Now, check whether it is scaled up:
 
-'''sh
+```sh
 $ kubectl get deployments
 
 NAME DESIRED CURRENT UP-TO-DATE AVAILABLE AGE 
@@ -32,4 +34,4 @@ kubernetes-bootcamp-5c69669756-slht6
 
 kubernetes-bootcamp-5c69669756-t4pcs 
 1/1 Running 0 28s 172.18.0.4 minikube 
-'''
+```
